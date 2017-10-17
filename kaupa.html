@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Kaupa fooþjónustuna</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Roboto+Slab:400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styleguide.css"> -->
-    <link rel="stylesheet" href="styles-um.css">
+    <link rel="stylesheet" href="styles-kaupa.css">
   </head>
   <body>
     <!--Haus-->
@@ -19,6 +18,98 @@
       </div>
     </div>
     <main>
+      <section>
+        <div class="titill">
+          <span>Kaupa</span>
+        </div>
+        <div class="kaupa">
+          <div class="person">
+            <div class="person__titill">Persónuupplýsingar</div>
+            <div class="person__nafn">
+              <span>Nafn:</span>
+              <input type="text">
+            </div>
+            <div class="person__kt">
+              <span>Kennitala</span>
+              <input type="text" placeholder="123456-78900">
+            </div>
+            <div class="person__kyn">
+              <span>Kyn:</span>
+              <input type="radio" id="kyn--one" name="kyn" value="kona">
+              <label for="kyn--one">Kona</label>
+              <input type="radio" id="kyn--two" name="kyn" value="karl">
+              <label for="kyn--two">Karl</label>
+              <input type="radio" id="kyn--three" name="kyn" value="annad">
+              <label for="kyn--three">Annað</label>
+            </div>
+            <div class="person__simi">
+              <span>Sími:</span>
+              <input type="text" placeholder="+354 812 3456">
+            </div>
+            <div class="person__heimili">
+              <span>Heimilisfang:</span>
+              <input type="text">
+            </div>
+            <div class="check">
+              <input type="checkbox" id="postlisti" name="skra" value="postur">
+              <label for="postlisti">Skrá mig á póstlista</label>
+            </div>
+          </div>
+
+          <div class="kort">
+            <div class="kort__titill">Greiðsluupplýsingar</div>
+            <div class="kort__tegund">
+              <span>Greiða með:</span>
+              <select name="kort__select">
+                <option value="kreditkort" selected>Kreditkort</option>
+                <option value="millifaera">Millifærsla</option>
+                <option value="reidufe">Reiðufé</option>
+              </select>
+            </div>
+            <div class="kort__nafn">
+              <span>Nafn á korti:</span>
+              <input type="text">
+            </div>
+            <div class="kort__nr">
+              <span>Kortanúmer:</span>
+              <input type="text" placeholder="5999-9999-9999-9999">
+            </div>
+            <div class="kort__timi">
+              <span>Gildistími:</span>
+              <div class="timi__manudur">
+                <span>Mán</span>
+                <select name="man__select">
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+              <div class="timi__ar">
+                <span>Ár</span>
+                <select name="ar__select">
+                  <option value="2017" selected>2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="kaupa__takki">
+          <a class="panta" href="">Panta</a>
+        </div>
+      </section>
+
       <footer>
         <table class="footer">
           <tr>

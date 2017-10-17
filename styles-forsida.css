@@ -2,17 +2,19 @@
 body{
   font-family: 'Open sans', Sans-serif;
   background-image: url("bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-position: top;
   padding: 0;
   margin: 0;
-
-  @media all and (max-width: 2000px) {
-    background-size: cover;
-    background-repeat: repeat-y;
+}
+@media all and (min-width: 600px) {
+  body{
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
+
 /*Header*/
 #fphdr {
   background-color: black;
@@ -74,7 +76,7 @@ section.fp {
 }
 
   .fp-tx1 {
-    margin-top: 300px;
+    margin-top: 30%;
     font-size: 40px;
     color: black;
     /*opacity: 0;
@@ -111,8 +113,6 @@ section.fp {
 .tab{
   display: block;
   width: 99%;
-  margin-left: 40px;
-  margin-right: 40px;
 }
   .col1{
     display: inline-block;
@@ -156,30 +156,45 @@ section.fp {
 .medmaeli{
   padding-top: 200px;
   background-color: white;
-  max-width: 2000px;
   text-align: center;
   padding-bottom: 140px;
+  width: 100%;
 }
   .medmaeli-person{
+    vertical-align: middle;
+    height: 450px;
     display: inline-block;
-    max-width: 500px;
+    width: 30%;
     margin-left: 20px;
     margin-right: 20px;
-    border: 1px solid red;
+  }
+
+  @media (max-width: 600px){
+    .medmaeli-person{
+      width: 49%;
+      background-color: red;
+    }
+  }
+
+  .medmaeli-person:first-of-type{
+    margin-left: 0;
+  }
+  .medmaeli-person:last-of-type{
+    margin-right: 0;
   }
   .medmaeli-img{
     border-radius: 50%;
+    height: 300px;
   }
   .medmaeli-beint{
     font-style: italic;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     word-wrap: break-word;
   }
   .medmaeli-nafn{
-    margin-top: 40px;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
   }
   .medmaeli-askrifandi{
     font-size: 15px;

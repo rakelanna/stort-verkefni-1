@@ -65,7 +65,7 @@ body{
     background-color: black;
   }
 
-/*Texti*/
+/*Titill*/
 .titill{
   background-color: transparent;
   height: 320px;
@@ -77,48 +77,43 @@ body{
   font-size: 40px;
 }
 
-.texti{
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+/*Greiðsla*/
+.kaupa{
   background-color: white;
-}
-  .texti__titill{
-    padding-bottom: 20px;
-    font-size: 30px;
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: bold;
-  }
-  .texti__ord{
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-  .lorem{
-    font-size: 20px;
-    padding-bottom: 20px;
-  }
-.table{
+  display: block;
   width: 100%;
 }
-  .col--one{
-    font-size: 20px;
-    padding-right: 60px;
-    padding-bottom: 20px;
-    width: 49%;
-  }
-  .col--two{
-    padding-left: 60px;
-    width: 49%;
-  }
-  .col__quote{
-    font-size: 30px;
-    font-style: italic;
-    padding-bottom: 20px;
-  }
-  .col__owner{
-    padding-bottom: 60px;
-  }
+.person, .kort{
+  display: inline-block;
+  width: 49%;
+}
+.person__titill, .kort__titill{
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.person__nafn, .person__kyn, .person__simi, .person__heimili, .kort__tegund, .kort__nafn, .kort__nr, .kort__timi{
+  padding-bottom: 20px;
+}
+.kort{
+  float: right;
+}
+
+
+/*Panta takki*/
+.kaupa__takki{
+  background-color: white;
+  padding: 200px;
+  text-align: center;
+}
+.panta{
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 3px;
+  color: white;
+  background-color: #666666;
+}
 
 /*Fótur*/
 footer{
