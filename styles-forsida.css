@@ -1,0 +1,238 @@
+/*Sass þýðirinn virkaði ekki hjá mér, reyni að kippa því í lag með dæmatímakennara fyrir næsta verkefni, ef það inniheldur Sass.*/
+body{
+  font-family: 'Open sans', Sans-serif;
+  background-image: url("bg.jpg");
+  background-size: contain;
+  background-position: center;
+  background-position: top;
+  padding: 0;
+  margin: 0;
+
+  @media all and (max-width: 2000px) {
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+}
+/*Header*/
+#fphdr {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  height: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  font-family: 'Roboto Slab', Sans-Serif;
+  vertical-align: middle;
+}
+
+  .hdr-title {
+    text-decoration: none;
+    color: white;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  div.hdr-links {
+    float: right;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .hdr-links > a {
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  a.hdr-link2.sel {
+    background-color: #666666;
+  }
+
+  a.hdr-link2.sel:hover, a.hdr-link2.sel:active {
+    border: 1px solid #666666;
+    background-color: black;
+  }
+
+/*Titill*/
+section.fp {
+  background-color: transparent;
+  height: 600px;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+  .fp-tx1 {
+    margin-top: 300px;
+    font-size: 40px;
+    color: black;
+    /*opacity: 0;
+    transition: opacity 1s ease-in;*/
+  }
+  .fp-tx2{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 60px;
+    /*opacity: 0;
+    transition-delay: 1s;
+    transition: opacity 1s ease-in;*/
+  }
+  .fp-link{
+    text-decoration: none;
+    color: white;
+    background-color: #666666;
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    /*opacity: 0;
+    transition: opacity 1s ease-in;*
+    }
+    .fp-link:active{
+      opacity: 1;*/
+    }
+
+/*Medmaeli*/
+.white{
+  background-color: white;
+  padding-top: 200px;
+}
+.tab{
+  display: block;
+  width: 99%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+  .col1{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+  .col2{
+    display: inline-block;
+    width: 49%;
+  }
+    .col2-img{
+      background-image: url("image.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: block;
+      width: 100%;
+      height: 500px;
+      margin: 20px;
+      margin-right: 0;
+    }
+    .txt-img2{
+      width: 30px;
+      height: 30px;
+      float: left;
+    }
+    .h-txt{
+      font-size: 20px;
+      font-family: 'Roboto Slab', sans-serif;
+      font-weight: bold;
+    }
+    .h-txt:first-of-type{
+      margin-top: 100px;
+    }
+    .p-txt{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      margin-bottom: 100px;
+    }
+
+/*Meðmæli bein*/
+.medmaeli{
+  padding-top: 200px;
+  background-color: white;
+  max-width: 2000px;
+  text-align: center;
+  padding-bottom: 140px;
+}
+  .medmaeli-person{
+    display: inline-block;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid red;
+  }
+  .medmaeli-img{
+    border-radius: 50%;
+  }
+  .medmaeli-beint{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    word-wrap: break-word;
+  }
+  .medmaeli-nafn{
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .medmaeli-askrifandi{
+    font-size: 15px;
+    font-weight: 500;
+    color: #666666;
+  }
+
+/*Lokaorð*/
+.lokaord{
+  background-color: white;
+  padding-bottom: 100px;
+  text-align: center;
+}
+  .lokaord-txt{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+  .lokaord-link{
+    text-decoration: none;
+    color: white;
+    background-color: #666666;
+    font-size: 30px;
+    padding: 10px 80px;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+/*Fótur*/
+footer{
+  background-color: #444444;
+  color: white;
+}
+  .footer{
+    margin-left: 35%;
+    margin-right: 35%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+    .footer-nafn, .footer-simi{
+      padding-right: 200px;
+    }
+  .footer2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #AAAAAA;
+    border-top: 2px solid #AAAAAA;
+  }

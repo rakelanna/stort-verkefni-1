@@ -1,0 +1,148 @@
+body{
+  font-family: 'Open sans', Sans-serif;
+  background-image: url("bg-subpage.jpg");
+  background-size: contain;
+  background-position: center;
+  background-position: top;
+  padding: 0;
+  margin: 0;
+
+  @media all and (max-width: 2000px) {
+    background-size: cover;
+    background-repeat: repeat-y;
+  }
+}
+
+/*Haus*/
+#fphdr {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  height: 40px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  font-family: 'Roboto Slab', Sans-Serif;
+  vertical-align: middle;
+}
+
+  .hdr-title {
+    text-decoration: none;
+    color: white;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  div.hdr-links {
+    float: right;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .hdr-links > a {
+    border: 1px solid black;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 2px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  a.hdr-link2.sel {
+    background-color: #666666;
+  }
+
+  a.hdr-link2.sel:hover, a.hdr-link2.sel:active {
+    border: 1px solid #666666;
+    background-color: black;
+  }
+
+.titill{
+  background-color: transparent;
+  height: 320px;
+  padding-top: 320px;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.texti{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: white;
+}
+  .texti__titill{
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: bold;
+  }
+  .texti__ord{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .lorem{
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+.table{
+  width: 100%;
+}
+  .col--one{
+    font-size: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    width: 49%;
+  }
+  .col--two{
+    padding-left: 60px;
+    width: 49%;
+  }
+  .col__quote{
+    font-size: 30px;
+    font-style: italic;
+    padding-bottom: 20px;
+  }
+  .col__owner{
+    padding-bottom: 60px;
+  }
+
+/*Fótur*/
+footer{
+  background-color: #444444;
+  color: white;
+}
+  .footer{
+    margin-left: 35%;
+    margin-right: 35%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+    .footer-nafn, .footer-simi{
+      padding-right: 200px;
+    }
+  .footer2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #AAAAAA;
+    border-top: 2px solid #AAAAAA;
+  }
